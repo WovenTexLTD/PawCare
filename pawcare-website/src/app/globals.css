@@ -24,7 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* How it works – flip card */
+/* Flip card container */
 .card {
   width: 100%;
   max-width: 480px;
@@ -32,6 +32,7 @@ body {
   perspective: 1000px;
 }
 
+/* Inner element that rotates */
 .card-inner {
   width: 100%;
   height: 100%;
@@ -44,26 +45,26 @@ body {
   transform: rotateY(180deg);
 }
 
+/* Both sides share these styles */
 .card-front,
 .card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
   border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  backface-visibility: hidden;
 }
 
-/* FRONT: white with black title (background from section) */
+/* FRONT: white background, black title text (we set text color in JSX) */
 .card-front {
-  background-color: #ff751f;
+  background-color: #ffffff;
 }
 
-/* BACK: PawCare orange with white text */
+/* BACK: PawCare orange with white body text */
 .card-back {
-  background-color: #ffffff;
+  background-color: #ff751f;
   transform: rotateY(180deg);
 }
 
