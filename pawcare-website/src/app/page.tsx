@@ -89,26 +89,42 @@ style={{
         </div>
       </section>
 
-      {/* FEATURES */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          What PawCare offers
-        </h2>
-        <p className="mt-3 max-w-2xl text-zinc-600">
-          A clean experience for discovery and booking — designed for speed, clarity,
-          and trust.
-        </p>
+            {/* FEATURES */}
+      <section className="relative overflow-hidden bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-16 lg:py-24">
+          <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+            What PawCare offers
+          </h2>
+          <p className="mt-2 max-w-xl text-sm text-black/70 sm:text-base">
+            A clean experience for discovery and booking — designed for speed, clarity,
+            and trust.
+          </p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {features.map((f) => (
-            <div
-              key={f.title}
-              className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm"
-            >
-              <div className="text-lg font-semibold">{f.title}</div>
-              <p className="mt-2 text-zinc-600">{f.desc}</p>
-            </div>
-          ))}
+          {/* Cards, pushed left with a max width */}
+          <div className="mt-10 max-w-4xl space-y-6 md:grid md:max-w-none md:grid-cols-3 md:gap-6 md:space-y-0">
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-3xl bg-[#ff751f] px-6 py-6 text-white shadow-[0_18px_40px_rgba(0,0,0,0.25)] ring-1 ring-black/10"
+              >
+                <h3 className="text-lg font-semibold">{feature.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/90">
+                  {feature.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Dog illustration bottom-right */}
+        <div className="pointer-events-none absolute -bottom-6 -right-10 w-[160px] sm:w-[220px] md:w-[260px]">
+          <Image
+            src="/dog.svg"
+            alt="Happy dog"
+            width={260}
+            height={260}
+            className="h-auto w-full drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
+          />
         </div>
       </section>
 
