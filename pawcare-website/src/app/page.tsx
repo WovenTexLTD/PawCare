@@ -37,9 +37,15 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:py-20">
           {/* LEFT SIDE: text */}
           <div className="relative flex-1">
-            <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
-              PawCare
-            </div>
+            <div
+  className={`${pawcareFont.className} text-5xl sm:text-6xl`}
+  style={{
+    color: "#ffffff",
+    textShadow: "0.18em 0.12em 0 #f4a667", // warm offset shadow
+  }}
+>
+  PawCare
+</div>
 
             <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Pet care, made simple.
