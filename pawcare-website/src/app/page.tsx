@@ -61,25 +61,22 @@ export default function HomePage() {
           </div>
 
           {/* RIGHT SIDE: white circle + phone SVG */}
-          <div className="relative flex flex-1 items-center justify-center">
-            {/* White circle behind the phone */}
-            <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
-              <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
-
-              {/* Phone in the center of the circle */}
-              <div className="relative h-[520px] w-[520px] sm:h-[560px] sm:w-[560px]">
-  <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
-  <div className="relative flex h-full w-full items-center justify-center">
-    <Image
-      src="/phone.svg"
-      alt="PawCare app preview"
-      width={440}   // 220 × 2
-      height={880}  // 440 × 2
-      className="drop-shadow-xl"
-      priority
-                />
+              {/* RIGHT SIDE: white circle + phone SVG */}
+      <div className="relative flex flex-1 items-center justify-center">
+        <div className="relative h-[520px] w-[520px] sm:h-[560px] sm:w-[560px]">
+          <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
+          <div className="relative flex h-full w-full items-center justify-center">
+            <Image
+              src="/phone.svg"
+              alt="PawCare app preview"
+              width={440}   // 220 × 2
+              height={880}  // 440 × 2
+              className="drop-shadow-xl"
+              priority
+            />
           </div>
         </div>
+      </div>
       </section>
       {/* FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
