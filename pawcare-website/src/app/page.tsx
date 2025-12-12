@@ -129,35 +129,30 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-<section id="how-it-works" className="bg-white py-24">
-  <div className="mx-auto max-w-6xl px-0 flex flex-col lg:flex-row items-center justify-between gap-16">
-    {/* LEFT: phones image only, pushed to the very left */}
+<section id="how-it-works" className="w-full bg-white py-20">
+  <div className="w-full px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+    {/* LEFT: phones image, on the very left, big */}
     <div className="flex-1 flex justify-start">
       <Image
         src="/step.svg"
         alt="How PawCare works"
-        width={1400}   // ~2x bigger than before
-        height={700}
-        className="w-full max-w-[900px] h-auto"
+        width={1600}
+        height={800}
+        // 2×-ish the previous size, no max-width cap
+        className="w-[700px] md:w-[900px] lg:w-[1100px] h-auto"
         priority
       />
     </div>
 
     {/* RIGHT: flip card */}
-    <div className="mt-12 lg:mt-0 lg:flex-none flex justify-center w-full lg:w-auto px-6">
+    <div className="flex-1 flex justify-center lg:justify-end">
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <span className="text-xl font-semibold">
-              How it works
-            </span>
+            <span>How it works</span>
           </div>
           <div className="card-back">
-            <span className="text-xl font-semibold text-center">
-              PawCare for pet owners
-              <br />
-              Find, book & manage in one place
-            </span>
+            <span>PawCare for pet owners</span>
           </div>
         </div>
       </div>
