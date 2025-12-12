@@ -129,17 +129,19 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-<section id="how-it-works" className="w-full bg-white py-20">
-  <div className="w-full px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between gap-12">
-    {/* LEFT: phones image, on the very left, big */}
+<section
+  id="how-it-works"
+  className="w-full bg-white py-28 min-h-[640px] flex items-center"
+>
+  <div className="w-full px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-16">
+    {/* LEFT: bigger step image */}
     <div className="flex-1 flex justify-start">
       <Image
         src="/step.svg"
         alt="How PawCare works"
-        width={1600}
-        height={800}
-        // 2×-ish the previous size, no max-width cap
-        className="w-[700px] md:w-[900px] lg:w-[1100px] h-auto"
+        width={1800}
+        height={900}
+        className="w-[1000px] md:w-[1250px] lg:w-[1450px] max-w-full h-auto"
         priority
       />
     </div>
@@ -159,6 +161,7 @@ style={{
     </div>
   </div>
 </section>
+
 
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
