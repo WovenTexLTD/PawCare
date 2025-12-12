@@ -31,19 +31,20 @@ export default function MyPetSection() {
           </p>
         </div>
 
-        {/* RIGHT – phone-in-hand image */}
-        <div className="relative flex h-[480px] flex-1 items-center justify-center lg:justify-end">
-          <div className="relative h-full max-h-[480px]">
-            <Image
-              src="/hand.svg" // <-- change if your SVG has a different name/path
-              alt="PawCare My Pets screen"
-              width={360}
-              height={720}
-              className="h-full w-auto"
-              priority
-            />
-          </div>
-        </div>
+       {/* RIGHT – phone-in-hand image */}
+<div className="relative flex flex-1 items-center justify-end -mr-6 lg:-mr-24">
+  <div className="relative h-[560px] w-auto">
+    <Image
+      src="/phone.svg"            // keep your SVG path
+      alt="PawCare My Pets screen"
+      width={420}                 // bigger image
+      height={840}
+      className="h-full w-auto"
+      priority
+    />
+  </div>
+</div>
+
       </div>
     </section>
   );
