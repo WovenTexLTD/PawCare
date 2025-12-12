@@ -39,10 +39,10 @@ export default function HomePage() {
           <div className="relative flex-1">
             <div
   className={`${pawcareFont.className} text-5xl sm:text-6xl`}
-  style={{
-    color: "#ffffff",
-    textShadow: "0.18em 0.12em 0 #f4a667", // warm offset shadow
-  }}
+style={{
+  color: "#ffffff",
+  textShadow: "0.08em 0.06em 0 #f4a667",
+}}
 >
   PawCare
 </div>
@@ -53,11 +53,11 @@ export default function HomePage() {
 
             <p className="mt-4 max-w-xl text-pretty text-base text-white/90 sm:text-lg">
               PawCare helps pet owners discover trusted vets, groomers, daycare,
-              trainers, and pet services — then book faster with fewer headaches.
+              trainers, and pet services, then book faster with fewer headaches.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="#download" variant="primary">
+              <Button href="#download" variant="secondary">
                 Get the app
               </Button>
               <Button href="#business" variant="secondary">
