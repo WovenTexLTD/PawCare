@@ -73,7 +73,7 @@ export default function MyPetSection() {
 
       {/* DESKTOP HAND / PHONE (STUCK TO FAR RIGHT) */}
       <div className="pointer-events-auto absolute right-[-4px] top-1/2 hidden -translate-y-1/2 lg:block">
-        <div className="h-[560px]">
+        <div className="h-[700px]">
           <Image
             src="/hand.svg"            // same image as above
             alt="PawCare My Pets screen"
