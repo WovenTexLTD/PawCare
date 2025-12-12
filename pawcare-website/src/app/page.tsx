@@ -129,33 +129,46 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-  <section
-  id="how-it-works"
-  className="bg-gray-100 py-16"
->
-  <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 lg:flex-row lg:items-center">
-    {/* LEFT: step image */}
-    <div className="flex-1 flex justify-start">
+<section id="how-it-works" className="bg-gray-100 py-20">
+  <div
+    className="
+      mx-auto
+      max-w-6xl
+      grid
+      gap-12
+      items-center
+      px-6
+      lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]
+    "
+  >
+    {/* LEFT: large step image */}
+    <div className="justify-self-start">
       <Image
         src="/step.svg"
         alt="How PawCare works"
-        width={900}
-        height={520}
-        className="h-auto w-full max-w-[900px]"
+        width={1000}      // keeps it nice and sharp
+        height={600}
+        className="w-full max-w-[720px] h-auto"
         priority
       />
     </div>
 
     {/* RIGHT: flip card */}
-    <div className="flex-1 flex justify-start lg:pl-8">
+    <div className="justify-self-start lg:ml-4">
       <div className="card">
         <div className="card-inner">
+          {/* FRONT: big title, white background, black text */}
           <div className="card-front">
-            <span>How it works</span>
+            <span className="text-3xl sm:text-4xl font-semibold text-black">
+              How it works
+            </span>
           </div>
+
+          {/* BACK: orange inner with white body text */}
           <div className="card-back">
-            <p>
-              PawCare for pet owners – find, book & manage all your pet services in one place.
+            <p className="text-base sm:text-lg leading-relaxed text-white text-center px-4">
+              PawCare for pet owners – find, book &amp; manage all your pet
+              services in one place.
             </p>
           </div>
         </div>
