@@ -26,8 +26,9 @@ body {
 }
 /* How it works – flip card */
 .card {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  max-width: 480px;
+  height: 260px;
   perspective: 1000px;
 }
 
@@ -36,7 +37,7 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.999s;
+  transition: transform 0.9s;
 }
 
 .card:hover .card-inner {
@@ -49,33 +50,22 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* You can swap these colors to PawCare orange/black later if you like */
+/* FRONT: white with black title (background from section) */
 .card-front {
-  background-color: #ffffff;               /* white card */
-  color: #000000;                          /* black text */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  border: 10px solid #ffffff;
-
-  /* "as big as a title" */
-  font-size: 2.5rem;                       /* ~40px, tweak as needed */
-  font-weight: 700;                        /* bold */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
-  transform: rotateY(0deg);
+  background-color: #ff751f;
 }
+
+/* BACK: PawCare orange with white text */
 .card-back {
-  background-color: #ff751f;               /* PawCare orange */
-  color: #ffffff;                          /* white text */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  border: 10px solid #ff751f;
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+}
 
   /* body-sized text */
   font-size: 1rem;                         /* ~16px body size */
