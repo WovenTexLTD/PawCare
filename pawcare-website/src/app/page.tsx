@@ -129,41 +129,22 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-<section
-  id="how-it-works"
-  className="bg-white py-24"
->
-  <div className="mx-auto max-w-6xl px-6 flex flex-col lg:flex-row items-center justify-between gap-16">
-    {/* LEFT: title + phones */}
-    <div className="flex-1">
-      <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-black">
-        How PawCare works
-      </h2>
-
-      {/* Step labels */}
-      <div className="mt-10">
-        <div className="flex justify-between text-base sm:text-lg font-semibold text-black max-w-xl">
-          <span>1. Find</span>
-          <span>2. Book</span>
-          <span>3. Manage</span>
-        </div>
-
-        {/* Phones image */}
-        <div className="mt-6 flex justify-start">
-          <Image
-            src="/step.svg"
-            alt="Find, book and manage pet services with PawCare"
-            width={900}
-            height={450}
-            className="w-full max-w-[620px] h-auto"
-            priority
-          />
-        </div>
-      </div>
+<section id="how-it-works" className="bg-white py-24">
+  <div className="mx-auto max-w-6xl px-0 flex flex-col lg:flex-row items-center justify-between gap-16">
+    {/* LEFT: phones image only, pushed to the very left */}
+    <div className="flex-1 flex justify-start">
+      <Image
+        src="/step.svg"
+        alt="How PawCare works"
+        width={1400}   // ~2x bigger than before
+        height={700}
+        className="w-full max-w-[900px] h-auto"
+        priority
+      />
     </div>
 
     {/* RIGHT: flip card */}
-    <div className="mt-12 lg:mt-0 lg:flex-none flex justify-center">
+    <div className="mt-12 lg:mt-0 lg:flex-none flex justify-center w-full lg:w-auto px-6">
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
