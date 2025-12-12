@@ -129,37 +129,45 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-<section className="bg-[#f3f4f6] py-20">
-  <div className="mx-auto max-w-6xl flex items-center justify-between gap-12">
-    {/* LEFT: steps image */}
-    <div className="flex-shrink-0">
+<section id="how-it-works" className="bg-[#f3f4f6] py-20">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
+
+    {/* LEFT: step.svg – moved slightly left & 40% bigger */}
+    <div className="flex-shrink-0 -translate-x-4">
       <Image
         src="/step.svg"
-        alt="How PawCare works: find, book, manage"
-        width={640}
-        height={360}
-        className="w-[640px] h-auto"
+        alt="How PawCare works: Find, Book, Manage"
+        width={630}          // 40% larger than ~450
+        height={320}
+        className="w-[630px] h-auto"
         priority
       />
     </div>
 
-    {/* RIGHT: flip card */}
-    <div className="card">
-      <div className="card-inner">
-        <div className="card-front">
-          <h2>How it works</h2>
-        </div>
-        <div className="card-back">
-          <p>
-            PawCare helps pet owners find trusted vets, groomers and daycares,
-            book in a few taps, and manage everything in one place — without
-            endless back-and-forth.
-          </p>
+    {/* RIGHT: flip card – moved slightly right & 40% bigger */}
+    <div className="flex-shrink-0 translate-x-4">
+      <div className="card scale-[1.4] origin-center">
+        <div className="card-inner">
+          {/* FRONT: white background, big black title */}
+          <div className="card-front">
+            <h2>How it works</h2>
+          </div>
+
+          {/* BACK: orange background, white body text */}
+          <div className="card-back">
+            <p>
+              PawCare helps pet owners discover trusted vets, groomers and
+              daycare — then book and manage everything in one place with
+              fewer headaches.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
 
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
