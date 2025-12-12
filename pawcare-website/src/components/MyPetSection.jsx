@@ -49,18 +49,17 @@ export default function MyPetSection() {
           </div>
         </div>
 
-        {/* RIGHT: HAND + PHONE IMAGE */}
-        <div className="w-full lg:w-auto flex justify-center lg:justify-end">
-          <div className="h-[480px] md:h-[520px] lg:h-[560px]">
-            <Image
-              src="/hand.svg"                 // make sure this path matches your file
-              alt="PawCare My Pets screen"
-              width={480}
-              height={960}
-              className="h-full w-auto"
-              priority
-            />
-          </div>
+{/* PHONE – DESKTOP: HAND IMAGE IN TOP-RIGHT, FULLY VISIBLE */}
+<div className="pointer-events-auto absolute right-4 top-1/2 hidden -translate-y-1/2 lg:flex">
+  <Image
+    src="/hand.svg"
+    alt="PawCare My Pets screen"
+    width={480}
+    height={960}
+    className="w-[480px] h-auto"
+    priority
+  />
+</div>
         </div>
       </div>
     </section>
