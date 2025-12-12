@@ -35,7 +35,7 @@ export default function MyPetSection() {
         <div className="relative flex h-[480px] flex-1 items-center justify-center lg:justify-end">
           <div className="relative h-full max-h-[480px]">
             <Image
-              src="/phone.svg" // <-- change if your SVG has a different name/path
+              src="/hand.svg" // <-- change if your SVG has a different name/path
               alt="PawCare My Pets screen"
               width={360}
               height={720}
