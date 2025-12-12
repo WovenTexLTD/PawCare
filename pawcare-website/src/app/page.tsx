@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import FAQ from "@/components/FAQ";
 import { Pacifico } from "next/font/google";
+import MyPetSection from "./components/MyPetSection"; // adjust path if you put it elsewhere
 
 const pawcareFont = Pacifico({
   subsets: ["latin"],
@@ -171,7 +172,9 @@ style={{
   </div>
 </section>
 
-
+      {/* MY PET SECTION */}
+      <MyPetSection />
+      
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
