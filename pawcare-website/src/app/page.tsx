@@ -26,73 +26,50 @@ export default function HomePage() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-zinc-100">
-        <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
-              <p className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-sm text-zinc-700">
-                <span className="h-2 w-2 rounded-full bg-zinc-900" />
-                PawCare is launching soon
-              </p>
+     <section className="relative border-b border-black/10">
+  <div
+    className="relative mx-auto flex max-w-6xl items-start px-6 py-16 sm:py-20 min-h-[420px]"
+    style={{
+      backgroundImage: "url('/pawcare-hero.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      borderRadius: "1.5rem",
+    }}
+  >
+    {/* subtle overlay for readability */}
+    <div className="absolute inset-0 rounded-[1.5rem] bg-black/10" />
 
-              <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-                Pet care, made simple.
-              </h1>
+    {/* LEFT COLUMN – placed under the big 'PawCare' word */}
+    <div className="relative max-w-xl pt-24 sm:pt-28 lg:pt-32 text-white">
+      <p className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-sm text-black">
+        <span className="h-2 w-2 rounded-full bg-black" />
+        PawCare is launching soon
+      </p>
 
-              <p className="mt-4 max-w-xl text-pretty text-lg text-zinc-600">
-                PawCare helps pet owners discover trusted vets, groomers, daycare,
-                trainers, and pet services — then book faster with fewer headaches.
-              </p>
+      <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
+        Pet care, made simple.
+      </h1>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button href="#download" variant="primary">
-                  Get the app
-                </Button>
-                <Button href="#business" variant="secondary">
-                  For businesses
-                </Button>
-              </div>
+      <p className="mt-4 max-w-xl text-pretty text-lg text-white/85">
+        PawCare helps pet owners discover trusted vets, groomers, daycare,
+        trainers, and pet services — then book faster with fewer headaches.
+      </p>
 
-              <p className="mt-4 text-sm text-zinc-500">
-                Informational website — the app handles bookings.
-              </p>
-            </div>
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <Button href="#download" variant="primary">
+          Get the app
+        </Button>
+        <Button href="#business" variant="secondary">
+          For businesses
+        </Button>
+      </div>
 
-            {/* Mock phone card */}
-            <div className="relative">
-              <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-                <div className="flex items-center justify-between">
-                  <div className="font-semibold">PawCare</div>
-                  <div className="text-xs text-zinc-500">Austin, TX</div>
-                </div>
-                <div className="mt-6 grid gap-3">
-                  <div className="rounded-2xl border border-zinc-200 p-4">
-                    <div className="text-sm font-medium">Vet Clinics</div>
-                    <div className="mt-1 text-sm text-zinc-600">
-                      Browse clinics & availability
-                    </div>
-                  </div>
-                  <div className="rounded-2xl border border-zinc-200 p-4">
-                    <div className="text-sm font-medium">Groomers</div>
-                    <div className="mt-1 text-sm text-zinc-600">
-                      Find grooming near you
-                    </div>
-                  </div>
-                  <div className="rounded-2xl border border-zinc-200 p-4">
-                    <div className="text-sm font-medium">Daycare & Boarding</div>
-                    <div className="mt-1 text-sm text-zinc-600">
-                      Compare options quickly
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 rounded-2xl bg-zinc-900 px-4 py-3 text-center text-sm font-medium text-white">
-                  Request a booking
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <p className="mt-4 text-sm text-white/80">
+        Informational website — the app handles bookings.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
