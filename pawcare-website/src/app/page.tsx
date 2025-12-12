@@ -198,7 +198,7 @@ style={{
             <div className="card">
               <div className="card-inner">
                 <div className="card-front">
-                  <span>PawCare for pet owners</span>
+                  <span>How It Works</span>
                 </div>
                 <div className="card-back">
                   <span>PawCare for businesses</span>
