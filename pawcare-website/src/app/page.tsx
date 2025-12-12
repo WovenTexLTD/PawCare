@@ -208,7 +208,8 @@ style={{
           </div>
         </div>
       </section>
-
+  ); // ⬅︎ only here do you close the return
+}
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
