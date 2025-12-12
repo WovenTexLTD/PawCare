@@ -1,16 +1,22 @@
+// src/components/MyPetSection.jsx
 import Image from "next/image";
 
 export default function MyPetSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+    <section
+      className="
+        relative overflow-hidden bg-white
+        py-16 lg:py-24
+        min-h-[520px] lg:min-h-[680px]
+      "
+    >
       {/* ORANGE DECOR SHAPES */}
       <div className="pointer-events-none absolute -left-40 bottom-[-140px] h-[360px] w-[360px] rounded-full bg-[#ff751f]" />
       <div className="pointer-events-none absolute right-[-140px] -top-40 h-[360px] w-[360px] rounded-full bg-[#ff751f]" />
 
-      {/* MAIN CONTENT CONTAINER (CENTERED LIKE THE OTHER SECTIONS) */}
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 lg:flex-row lg:items-center">
-        {/* LEFT: TEXT + TAGS */}
-        <div className="w-full max-w-xl">
+      {/* MAIN TEXT CONTAINER (CENTERED) */}
+      <div className="relative mx-auto max-w-5xl px-6">
+        <div className="max-w-xl">
           <p className="text-xs font-semibold tracking-[0.22em] text-[#1b2733]">
             USER &amp; ACCOUNT
           </p>
@@ -27,7 +33,7 @@ export default function MyPetSection() {
             pet&apos;s wellbeing.
           </p>
 
-          {/* Orange tags */}
+          {/* ORANGE TAGS */}
           <div className="mt-6 flex flex-wrap gap-3">
             <div className="rounded-lg bg-[#ff751f] px-4 py-2">
               <span className="text-sm font-semibold text-white">
@@ -49,17 +55,32 @@ export default function MyPetSection() {
           </div>
         </div>
 
-{/* PHONE – DESKTOP: HAND IMAGE IN TOP-RIGHT, FULLY VISIBLE */}
-<div className="pointer-events-auto absolute right-4 top-1/2 hidden -translate-y-1/2 lg:flex">
-  <Image
-    src="/hand.svg"
-    alt="PawCare My Pets screen"
-    width={480}
-    height={960}
-    className="w-[480px] h-auto"
-    priority
-  />
-</div>
+        {/* MOBILE HAND / PHONE (BELOW TEXT) */}
+        <div className="mt-10 flex justify-center lg:hidden">
+          <div className="h-[420px]">
+            <Image
+              src="/hand.svg"          // make sure this path matches your file
+              alt="PawCare My Pets screen"
+              width={480}
+              height={960}
+              className="h-full w-auto"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* DESKTOP HAND / PHONE (STUCK TO FAR RIGHT) */}
+      <div className="pointer-events-auto absolute right-[-4px] top-1/2 hidden -translate-y-1/2 lg:block">
+        <div className="h-[560px]">
+          <Image
+            src="/hand.svg"            // same image as above
+            alt="PawCare My Pets screen"
+            width={480}
+            height={960}
+            className="h-full w-auto"
+            priority
+          />
         </div>
       </div>
     </section>
