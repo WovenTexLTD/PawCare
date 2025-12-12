@@ -10,20 +10,20 @@ export default function Footer() {
               Helping pet owners find care faster.
             </p>
           </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-600">
-            <a className="hover:text-zinc-900" href="#business">
-              For businesses
-            </a>
-            <a className="hover:text-zinc-900" href="#download">
-              Get the app
-            </a>
-            <a className="hover:text-zinc-900" href="/privacy/">
-              Privacy
-            </a>
-            <a className="hover:text-zinc-900" href="/terms/">
-              Terms
-            </a>
-          </div>
+    <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-black/70">
+  <a className="hover:text-[#ff751f]" href="#business">
+    For businesses
+  </a>
+  <a className="hover:text-[#ff751f]" href="#download">
+    Get the app
+  </a>
+  <a className="hover:text-[#ff751f]" href="/privacy/">
+    Privacy
+  </a>
+  <a className="hover:text-[#ff751f]" href="/terms/">
+    Terms
+  </a>
+</div>
         </div>
         <p className="mt-8 text-xs text-zinc-500">
           © {year} PawCare. All rights reserved.
