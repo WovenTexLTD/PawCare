@@ -128,36 +128,53 @@ style={{
         </div>
       </section>
 
-             {/* HOW IT WORKS */}
+                  {/* HOW IT WORKS */}
       <section id="how-it-works" className="relative bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-center text-2xl font-semibold tracking-tight text-black sm:text-3xl">
-            How PawCare works
-          </h2>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:flex lg:items-center lg:gap-12">
+          {/* LEFT: title + phones image */}
+          <div className="flex-1">
+            <h2 className="text-left text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+              How PawCare works
+            </h2>
 
-          <div className="relative mx-auto mt-10 max-w-6xl">
-            {/* Phones image – larger */}
-            <Image
-              src="/step.svg"
-              alt="Find, book and manage with PawCare"
-              width={1107}
-              height={554}
-              className="h-auto w-full"
-              priority
-            />
+            <div className="relative mt-10 max-w-[750px]">
+              {/* Phones image */}
+              <Image
+                src="/step.svg"
+                alt="Find, book and manage with PawCare"
+                width={1107}
+                height={554}
+                className="h-auto w-full"
+                priority
+              />
 
-            {/* Step labels over each phone */}
-            <div className="pointer-events-none absolute inset-0 flex items-start justify-center">
-              <div className="mx-auto flex w-full max-w-[950px] justify-between px-6 pt-4 sm:px-10 sm:pt-6">
-                <p className="text-base font-semibold text-black sm:text-2xl">
-                  1. Find
-                </p>
-                <p className="text-base font-semibold text-black sm:text-2xl">
-                  2. Book
-                </p>
-                <p className="text-base font-semibold text-black sm:text-2xl">
-                  3. Manage
-                </p>
+              {/* Step labels aligned over each phone */}
+              <div className="pointer-events-none absolute inset-0 flex items-start">
+                <div className="flex w-full justify-between px-6 pt-4 sm:px-10 sm:pt-6">
+                  <p className="text-base font-semibold text-black sm:text-2xl">
+                    1. Find
+                  </p>
+                  <p className="text-base font-semibold text-black sm:text-2xl">
+                    2. Book
+                  </p>
+                  <p className="text-base font-semibold text-black sm:text-2xl">
+                    3. Manage
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT: flip card */}
+          <div className="mt-10 flex justify-center lg:mt-0 lg:flex-none">
+            <div className="card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <span>PawCare for pet owners</span>
+                </div>
+                <div className="card-back">
+                  <span>PawCare for businesses</span>
+                </div>
               </div>
             </div>
           </div>
