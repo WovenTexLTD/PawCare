@@ -124,8 +124,6 @@ style={{
     width={480}
     height={480}
     className="h-auto w-full drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
-  />
-</div>
           />
         </div>
       </section>
