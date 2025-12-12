@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import FAQ from "@/components/FAQ";
 import { Pacifico } from "next/font/google";
-import MyPetSection from "./components/MyPetSection"; // adjust path if you put it elsewhere
+import MyPetSection from "@/components/MyPetSection";
 
 const pawcareFont = Pacifico({
   subsets: ["latin"],
