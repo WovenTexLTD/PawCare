@@ -129,39 +129,40 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-<section
+  <section
   id="how-it-works"
-  className="w-full bg-white py-28 min-h-[640px] flex items-center"
+  className="bg-gray-100 py-16"
 >
-  <div className="w-full px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-16">
-    {/* LEFT: bigger step image */}
+  <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 lg:flex-row lg:items-center">
+    {/* LEFT: step image */}
     <div className="flex-1 flex justify-start">
       <Image
         src="/step.svg"
         alt="How PawCare works"
-        width={1800}
-        height={900}
-        className="w-[1000px] md:w-[1250px] lg:w-[1450px] max-w-full h-auto"
+        width={900}
+        height={520}
+        className="h-auto w-full max-w-[900px]"
         priority
       />
     </div>
 
     {/* RIGHT: flip card */}
-    <div className="flex-1 flex justify-center lg:justify-end">
+    <div className="flex-1 flex justify-start lg:pl-8">
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
             <span>How it works</span>
           </div>
           <div className="card-back">
-            <span>PawCare for pet owners</span>
+            <p>
+              PawCare for pet owners – find, book & manage all your pet services in one place.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
