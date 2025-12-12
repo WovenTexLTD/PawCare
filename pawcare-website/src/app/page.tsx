@@ -160,7 +160,7 @@ style={{
           <div className="card-back">
             <p>
               PawCare helps pet owners discover trusted vets, groomers and
-              daycare — then book and manage everything in one place with
+              daycare, then book and manage everything in one place with
               fewer headaches.
             </p>
           </div>
