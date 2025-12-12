@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import FAQ from "@/components/FAQ";
+import { Pacifico } from "next/font/google";
+
+const pawcareFont = Pacifico({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const features = [
   {
