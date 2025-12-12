@@ -48,25 +48,16 @@ export default function MyPetSection() {
           </p>
         </div>
 
-        {/* RIGHT: hand + phone image, hugging the right edge */}
-        <div className="relative flex flex-1 justify-end">
-          <div
-            className="
-              w-[320px] sm:w-[380px] md:w-[420px] lg:w-[480px] xl:w-[520px]
-              translate-x-6 lg:translate-x-12
-            "
-          >
-            <Image
-              src="/hand.svg"
-              alt="PawCare My Pet screen on a phone in hand"
-              width={520}
-              height={760}
-              className="h-auto w-full object-contain"
-              priority
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+   {/* RIGHT SIDE: phone + hand SVG, pushed to the right */}
+<div className="relative flex flex-1 items-center justify-end -mr-6 lg:-mr-12">
+  <div className="relative h-[420px] w-auto">
+    <Image
+      src="/phone.svg"              // your SVG file
+      alt="PawCare app preview"
+      width={360}
+      height={720}
+      className="h-full w-auto"
+      priority
+    />
+  </div>
+</div>
