@@ -60,14 +60,14 @@ export default function HomePage() {
 
           {/* RIGHT SIDE: white circle + phone */}
           <div className="relative flex flex-1 items-center justify-center">
-            <div className="relative h-[520px] w-[520px] sm:h-[560px] sm:w-[560px]">
+      <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
               <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
               <div className="relative flex h-full w-full items-center justify-center">
                 <Image
                   src="/phone.svg"
                   alt="PawCare app preview"
-                  width={440}
-                  height={880}
+                  width={400}
+                  height={800}
                   className="drop-shadow-xl"
                   priority
                 />
