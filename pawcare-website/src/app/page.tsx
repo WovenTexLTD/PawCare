@@ -132,17 +132,18 @@ style={{
 <section id="how-it-works" className="bg-[#f3f4f6] py-20">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
 
-    {/* LEFT: step.svg – moved slightly left & 40% bigger */}
-    <div className="flex-shrink-0 -translate-x-4">
-      <Image
-        src="/step.svg"
-        alt="How PawCare works: Find, Book, Manage"
-        width={630}          // 40% larger than ~450
-        height={320}
-        className="w-[630px] h-auto"
-        priority
-      />
-    </div>
+{/* LEFT: step.svg – bigger via scale, without widening layout */}
+<div className="flex-shrink-0 -translate-x-4">
+  <div className="origin-left scale-[1.4]">
+    <Image
+      src="/step.svg"
+      alt="How PawCare works: Find, Book, Manage"
+      width={450}             // original logical width
+      height={260}
+      className="w-[450px] h-auto"
+      priority
+    />
+  </div>
 
     {/* RIGHT: flip card – moved slightly right & 40% bigger */}
     <div className="flex-shrink-0 translate-x-4">
