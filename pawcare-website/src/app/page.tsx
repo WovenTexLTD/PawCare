@@ -128,28 +128,40 @@ style={{
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="border-y border-zinc-100 bg-zinc-50">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            How it works
+         {/* HOW IT WORKS */}
+      <section id="how-it-works" className="relative bg-[#ff751f] py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-center text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            How PawCare works
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {steps.map((s) => (
-              <div
-                key={s.k}
-                className="rounded-3xl border border-zinc-200 bg-white p-6"
-              >
-                <div className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-zinc-900 text-sm font-semibold text-white">
-                  {s.k}
-                </div>
-                <div className="mt-4 text-lg font-semibold">{s.title}</div>
-                <p className="mt-2 text-zinc-600">{s.desc}</p>
-              </div>
-            ))}
+
+          <div className="relative mx-auto mt-10 max-w-5xl">
+            {/* Phones image */}
+            <Image
+              src="/step.svg"
+              alt="Find, book and manage with PawCare"
+              width={1107}
+              height={554}
+              className="h-auto w-full"
+              priority
+            />
+
+            {/* Step labels over each phone */}
+            <div className="pointer-events-none absolute inset-0 flex items-start justify-between px-4 pt-4 sm:px-10 sm:pt-6">
+              <p className="text-lg font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)] sm:text-2xl">
+                1. Find
+              </p>
+              <p className="text-lg font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)] sm:text-2xl">
+                2. Book
+              </p>
+              <p className="text-lg font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)] sm:text-2xl">
+                3. Manage
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
