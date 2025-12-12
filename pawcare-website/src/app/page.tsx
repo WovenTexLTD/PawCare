@@ -91,7 +91,7 @@ style={{
 
             {/* FEATURES */}
       <section className="relative overflow-hidden bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-16 lg:py-24">
+      <div className="max-w-5xl px-6 py-16 lg:py-24 lg:pl-24">
           <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl">
             What PawCare offers
           </h2>
@@ -117,13 +117,15 @@ style={{
         </div>
 
         {/* Dog illustration bottom-right */}
-        <div className="pointer-events-none absolute -bottom-6 -right-10 w-[160px] sm:w-[220px] md:w-[260px]">
-          <Image
-            src="/dog.svg"
-            alt="Happy dog"
-            width={260}
-            height={260}
-            className="h-auto w-full drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
+   <div className="pointer-events-none absolute -bottom-4 right-0 w-[260px] sm:w-[360px] md:w-[480px]">
+  <Image
+    src="/dog.svg"
+    alt="Happy dog"
+    width={480}
+    height={480}
+    className="h-auto w-full drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
+  />
+</div>
           />
         </div>
       </section>
