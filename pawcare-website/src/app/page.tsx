@@ -67,14 +67,16 @@ export default function HomePage() {
               <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
 
               {/* Phone in the center of the circle */}
-              <div className="relative flex h-full w-full items-center justify-center">
-                <Image
-                  src="/phone.svg"  // <-- file you moved to public/
-                  alt="PawCare app preview"
-                  width={220}
-                  height={440}
-                  className="drop-shadow-xl"
-                  priority
+              <div className="relative h-[520px] w-[520px] sm:h-[560px] sm:w-[560px]">
+  <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
+  <div className="relative flex h-full w-full items-center justify-center">
+    <Image
+      src="/phone.svg"
+      alt="PawCare app preview"
+      width={440}   // 220 × 2
+      height={880}  // 440 × 2
+      className="drop-shadow-xl"
+      priority
                 />
               </div>
             </div>
