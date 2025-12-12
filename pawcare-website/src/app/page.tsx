@@ -69,7 +69,7 @@ export default function HomePage() {
               {/* Phone image in the circle */}
               <div className="relative flex h-full w-full items-center justify-center">
                 <Image
-                  src="/phone.svg" // <-- ensure this matches your file name
+                  src="pawcare-website/src/phone.svg" // <-- ensure this matches your file name
                   alt="PawCare app preview"
                   width={220}
                   height={440}
