@@ -82,11 +82,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ...rest of your sections (features, how it works, etc.) stay as they are */}
-    </main>
-  );
-}
-
       {/* FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
