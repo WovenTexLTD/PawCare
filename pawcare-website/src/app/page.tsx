@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import FAQ from "@/components/FAQ";
 
@@ -26,50 +27,65 @@ export default function HomePage() {
   return (
     <main>
       {/* HERO */}
-     <section className="relative border-b border-black/10">
-  <div
-    className="relative mx-auto flex max-w-6xl items-start px-6 py-16 sm:py-20 min-h-[420px]"
-    style={{
-      backgroundImage: "url('/pawcarehero.svg')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      borderRadius: "1.5rem",
-    }}
-  >
-    {/* subtle overlay for readability */}
-    <div className="absolute inset-0 rounded-[1.5rem] bg-black/10" />
+      <section className="relative overflow-hidden border-b border-black/10 bg-[#ff751f]">
+        <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:py-20">
+          {/* LEFT SIDE: PawCare word + text + buttons */}
+          <div className="relative flex-1">
+            {/* Big PawCare wordmark-style text */}
+            <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+              PawCare
+            </div>
 
-    {/* LEFT COLUMN – placed under the big 'PawCare' word */}
-    <div className="relative max-w-xl pt-24 sm:pt-28 lg:pt-32 text-white">
-      <p className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-sm text-black">
-        <span className="h-2 w-2 rounded-full bg-black" />
-        PawCare is launching soon
-      </p>
+            {/* Your existing hero headline & copy, now tucked under PawCare */}
+            <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              Pet care, made simple.
+            </h1>
 
-      <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-        Pet care, made simple.
-      </h1>
+            <p className="mt-4 max-w-xl text-pretty text-base text-white/90 sm:text-lg">
+              PawCare helps pet owners discover trusted vets, groomers, daycare,
+              trainers, and pet services — then book faster with fewer headaches.
+            </p>
 
-      <p className="mt-4 max-w-xl text-pretty text-lg text-white/85">
-        PawCare helps pet owners discover trusted vets, groomers, daycare,
-        trainers, and pet services — then book faster with fewer headaches.
-      </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button href="#download" variant="primary">
+                Get the app
+              </Button>
+              <Button href="#business" variant="secondary">
+                For businesses
+              </Button>
+            </div>
 
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-        <Button href="#download" variant="primary">
-          Get the app
-        </Button>
-        <Button href="#business" variant="secondary">
-          For businesses
-        </Button>
-      </div>
+            <p className="mt-4 text-sm text-white/85">
+              Informational website — the app handles bookings.
+            </p>
+          </div>
 
-      <p className="mt-4 text-sm text-white/80">
-        Informational website — the app handles bookings.
-      </p>
-    </div>
-  </div>
-</section>
+          {/* RIGHT SIDE: white circle + phone SVG */}
+          <div className="relative flex flex-1 items-center justify-center">
+            {/* White circle */}
+            <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
+              <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
+
+              {/* Phone image in the circle */}
+              <div className="relative flex h-full w-full items-center justify-center">
+                <Image
+                  src="/phone.svg" // <-- ensure this matches your file name
+                  alt="PawCare app preview"
+                  width={220}
+                  height={440}
+                  className="drop-shadow-xl"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ...rest of your sections (features, how it works, etc.) stay as they are */}
+    </main>
+  );
+}
 
       {/* FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
