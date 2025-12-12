@@ -140,7 +140,7 @@ style={{
       alt="How PawCare works: Find, Book, Manage"
       width={800}             // original logical width
       height={400}
-      className="w-[450px] h-auto"
+      className="w-[700px] h-auto"
       priority
     />
   </div>
