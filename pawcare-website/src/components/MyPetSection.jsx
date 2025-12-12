@@ -4,12 +4,13 @@ import Image from "next/image";
 export default function MyPetSection() {
   return (
     <section
-      className="
-        relative overflow-hidden bg-white
-        py-16 lg:py-24
-        min-h-[520px] lg:min-h-[680px]
-      "
-    >
+  className="
+    relative overflow-hidden bg-white
+    py-10 lg:py-14
+    min-h-[520px] lg:min-h-[580px]
+  "
+>
+
       {/* ORANGE DECOR SHAPES */}
       <div className="pointer-events-none absolute -left-40 bottom-[-140px] h-[360px] w-[360px] rounded-full bg-[#ff751f]" />
       <div className="pointer-events-none absolute right-[-140px] -top-40 h-[360px] w-[360px] rounded-full bg-[#ff751f]" />
