@@ -26,7 +26,7 @@ const steps = [
 export default function HomePage() {
   return (
     <main>
-      {/* HERO */}
+       {/* HERO */}
       <section className="relative overflow-hidden border-b border-black/10 bg-[#ff751f]">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:py-20">
           {/* LEFT SIDE: PawCare word + text + buttons */}
@@ -36,7 +36,7 @@ export default function HomePage() {
               PawCare
             </div>
 
-            {/* Your existing hero headline & copy, now tucked under PawCare */}
+            {/* Hero headline & copy under the PawCare text */}
             <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Pet care, made simple.
             </h1>
@@ -62,14 +62,14 @@ export default function HomePage() {
 
           {/* RIGHT SIDE: white circle + phone SVG */}
           <div className="relative flex flex-1 items-center justify-center">
-            {/* White circle */}
+            {/* White circle behind the phone */}
             <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
               <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
 
-              {/* Phone image in the circle */}
+              {/* Phone in the center of the circle */}
               <div className="relative flex h-full w-full items-center justify-center">
                 <Image
-                  src="pawcare-website/src/phone.svg" // <-- ensure this matches your file name
+                  src="/phone.svg"  // <-- file you moved to public/
                   alt="PawCare app preview"
                   width={220}
                   height={440}
