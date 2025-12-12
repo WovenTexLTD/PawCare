@@ -1,19 +1,17 @@
 "use client";
 
 import Image from "next/image";
-// Remove this line if you don't actually need a separate CSS file:
-// import "./MyPetSection.css";
 
 export default function MyPetSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-24">
+    <section className="relative overflow-hidden bg-white py-14 lg:py-16">
       {/* ORANGE CIRCLES / BLOBS */}
-      {/* Bottom-left large circle */}
+      {/* Bottom-left big circle */}
       <div
         className="
           pointer-events-none
           absolute -left-40 bottom-[-220px]
-          h-[520px] w-[520px]
+          h-[420px] w-[420px]
           rounded-full
           bg-gradient-to-tr from-[#ff751f] via-[#ff9a3c] to-[#ff751f]
           opacity-80
@@ -23,8 +21,8 @@ export default function MyPetSection() {
       <div
         className="
           pointer-events-none
-          absolute right-[-180px] top-[-120px]
-          h-[360px] w-[360px]
+          absolute right-[-140px] top-[-120px]
+          h-[280px] w-[280px]
           rounded-full
           bg-gradient-to-tr from-[#ff751f] via-[#ff9a3c] to-[#ff751f]
           opacity-70
@@ -32,7 +30,7 @@ export default function MyPetSection() {
       />
 
       {/* MAIN CONTENT */}
-      <div className="relative z-10 mx-auto flex max-w-6xl items-center justify-between gap-10 px-6 lg:px-8">
+      <div className="relative z-10 flex w-full items-center justify-between px-6 lg:px-16">
         {/* LEFT: copy */}
         <div className="max-w-xl space-y-5">
           <p className="text-xs font-semibold tracking-[0.25em] text-zinc-500">
@@ -50,13 +48,12 @@ export default function MyPetSection() {
           </p>
         </div>
 
-        {/* RIGHT: hand + phone image */}
-        <div className="relative flex-1">
+        {/* RIGHT: hand + phone image, hugging the right edge */}
+        <div className="relative flex flex-1 justify-end">
           <div
             className="
-              relative z-10 ml-auto
-              w-[360px] sm:w-[420px] md:w-[460px] lg:w-[520px]
-              lg:mr-[-80px] xl:mr-[-120px]
+              w-[320px] sm:w-[380px] md:w-[420px] lg:w-[480px] xl:w-[520px]
+              translate-x-6 lg:translate-x-12
             "
           >
             <Image
