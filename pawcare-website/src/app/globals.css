@@ -24,21 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* HOW IT WORKS – flip card */
+/* === HOW IT WORKS – flip card === */
 
 .card {
-  width: 100%;
-  max-width: 480px;
-  height: 260px;
+  width: 320px;
+  height: 220px;
   perspective: 1000px;
 }
 
 .card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.9s;
+  transition: transform 0.8s;
 }
 
 .card:hover .card-inner {
@@ -48,31 +47,35 @@ body {
 .card-front,
 .card-back {
   position: absolute;
-  inset: 0;
+  inset: 0;                 /* top/right/bottom/left: 0 */
   border-radius: 24px;
+  backface-visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  backface-visibility: hidden;
+  text-align: center;
 }
 
-/* FRONT: white background, title text set in JSX */
+/* FRONT: white background, big black title */
 .card-front {
   background-color: #ffffff;
+  color: #000000;
+}
+
+.card-front h2 {
+  font-size: 2.25rem;       /* ~ text-3xl */
+  font-weight: 700;
 }
 
 /* BACK: orange background with white body copy */
 .card-back {
   background-color: #ff751f;
+  color: #ffffff;
   transform: rotateY(180deg);
+  padding: 1.5rem;
 }
 
-/* Body text inside the back of the card */
 .card-back p {
-  font-size: 1rem;                 /* ~16px body size */
+  font-size: 1rem;
   line-height: 1.5;
-  font-weight: 400;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  padding: 1.5rem;                 /* some breathing room */
-  text-align: center;
 }
