@@ -130,12 +130,40 @@ style={{
 
                   {/* HOW IT WORKS */}
       <section id="how-it-works" className="relative bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:flex lg:items-center lg:gap-12">
-          {/* LEFT: title + phones image */}
-          <div className="flex-1">
-            <h2 className="text-left text-2xl font-semibold tracking-tight text-black sm:text-3xl">
-              How PawCare works
-            </h2>
+     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:flex lg:items-start lg:justify-between lg:gap-16">
+        {/* LEFT: title + phones image */}
+<div className="flex-1 lg:max-w-[850px]">
+  <h2 className="text-left text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+    How PawCare works
+  </h2>
+
+  <div className="relative mt-8 max-w-[850px]">
+    {/* Phones image - bigger & pulled left */}
+    <Image
+      src="/step.svg"
+      alt="Find, book and manage with PawCare"
+      width={1107}
+      height={554}
+      className="h-auto w-full scale-[1.25] origin-left"
+      priority
+    />
+
+    {/* Step labels aligned over each phone */}
+    <div className="pointer-events-none absolute inset-0 flex items-start">
+      <div className="flex w-full justify-between px-8 pt-6 sm:px-12 sm:pt-8">
+        <p className="text-base font-semibold text-black sm:text-2xl">
+          1. Find
+        </p>
+        <p className="text-base font-semibold text-black sm:text-2xl">
+          2. Book
+        </p>
+        <p className="text-base font-semibold text-black sm:text-2xl">
+          3. Manage
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
             <div className="relative mt-10 max-w-[750px]">
               {/* Phones image */}
