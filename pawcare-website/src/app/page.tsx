@@ -144,6 +144,8 @@ style={{
       priority
     />
   </div>
+</div>
+
 
     {/* RIGHT: flip card – moved slightly right & 40% bigger */}
     <div className="flex-shrink-0 translate-x-4">
