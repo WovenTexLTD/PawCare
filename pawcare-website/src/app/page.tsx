@@ -129,48 +129,32 @@ style={{
       </section>
 
 {/* HOW IT WORKS */}
-<section id="how-it-works" className="bg-gray-100 py-20">
-  <div
-    className="
-      mx-auto
-      max-w-6xl
-      grid
-      gap-12
-      items-center
-      px-6
-      lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]
-    "
-  >
-    {/* LEFT: large step image */}
-    <div className="justify-self-start">
+<section className="bg-[#f3f4f6] py-20">
+  <div className="mx-auto max-w-6xl flex items-center justify-between gap-12">
+    {/* LEFT: steps image */}
+    <div className="flex-shrink-0">
       <Image
         src="/step.svg"
-        alt="How PawCare works"
-        width={1000}      // keeps it nice and sharp
-        height={600}
-        className="w-full max-w-[720px] h-auto"
+        alt="How PawCare works: find, book, manage"
+        width={640}
+        height={360}
+        className="w-[640px] h-auto"
         priority
       />
     </div>
 
     {/* RIGHT: flip card */}
-    <div className="justify-self-start lg:ml-4">
-      <div className="card">
-        <div className="card-inner">
-          {/* FRONT: big title, white background, black text */}
-          <div className="card-front">
-            <span className="text-3xl sm:text-4xl font-semibold text-black">
-              How it works
-            </span>
-          </div>
-
-          {/* BACK: orange inner with white body text */}
-          <div className="card-back">
-            <p className="text-base sm:text-lg leading-relaxed text-white text-center px-4">
-              PawCare for pet owners – find, book &amp; manage all your pet
-              services in one place.
-            </p>
-          </div>
+    <div className="card">
+      <div className="card-inner">
+        <div className="card-front">
+          <h2>How it works</h2>
+        </div>
+        <div className="card-back">
+          <p>
+            PawCare helps pet owners find trusted vets, groomers and daycares,
+            book in a few taps, and manage everything in one place — without
+            endless back-and-forth.
+          </p>
         </div>
       </div>
     </div>
