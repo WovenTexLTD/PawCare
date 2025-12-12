@@ -29,7 +29,7 @@ export default function MyPetSection() {
       </div>
 
 {/* PHONE – DESKTOP: HAND IMAGE IN TOP-RIGHT, FULLY VISIBLE */}
-<div className="pointer-events-auto absolute right-4 top-1/2 hidden -translate-y-1/2 lg:flex">
+<div className="pointer-events-auto absolute right-0 top-1/2 hidden -translate-y-1/2 lg:flex">
   <Image
     src="/hand.svg"           // <-- use your exact file path here
     alt="PawCare My Pets screen"
