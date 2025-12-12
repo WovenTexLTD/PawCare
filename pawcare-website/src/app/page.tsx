@@ -30,7 +30,7 @@ export default function HomePage() {
   <div
     className="relative mx-auto flex max-w-6xl items-start px-6 py-16 sm:py-20 min-h-[420px]"
     style={{
-      backgroundImage: "url('/pawcare-hero.png')",
+      backgroundImage: "url('/pawcarehero.svg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       borderRadius: "1.5rem",
