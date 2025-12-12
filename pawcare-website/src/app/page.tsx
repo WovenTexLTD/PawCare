@@ -128,88 +128,62 @@ style={{
         </div>
       </section>
 
-                  {/* HOW IT WORKS */}
-      <section id="how-it-works" className="relative bg-white py-16 sm:py-20">
-     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:flex lg:items-start lg:justify-between lg:gap-16">
-        {/* LEFT: title + phones image */}
-<div className="flex-1 lg:max-w-[850px]">
-  <h2 className="text-left text-2xl font-semibold tracking-tight text-black sm:text-3xl">
-    How PawCare works
-  </h2>
+{/* HOW IT WORKS */}
+<section
+  id="how-it-works"
+  className="bg-white py-24"
+>
+  <div className="mx-auto max-w-6xl px-6 flex flex-col lg:flex-row items-center justify-between gap-16">
+    {/* LEFT: title + phones */}
+    <div className="flex-1">
+      <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-black">
+        How PawCare works
+      </h2>
 
-  <div className="relative mt-8 max-w-[850px]">
-    {/* Phones image - bigger & pulled left */}
-    <Image
-      src="/step.svg"
-      alt="Find, book and manage with PawCare"
-      width={1107}
-      height={554}
-      className="h-auto w-full scale-[1.25] origin-left"
-      priority
-    />
+      {/* Step labels */}
+      <div className="mt-10">
+        <div className="flex justify-between text-base sm:text-lg font-semibold text-black max-w-xl">
+          <span>1. Find</span>
+          <span>2. Book</span>
+          <span>3. Manage</span>
+        </div>
 
-    {/* Step labels aligned over each phone */}
-    <div className="pointer-events-none absolute inset-0 flex items-start">
-      <div className="flex w-full justify-between px-8 pt-6 sm:px-12 sm:pt-8">
-        <p className="text-base font-semibold text-black sm:text-2xl">
-          1. Find
-        </p>
-        <p className="text-base font-semibold text-black sm:text-2xl">
-          2. Book
-        </p>
-        <p className="text-base font-semibold text-black sm:text-2xl">
-          3. Manage
-        </p>
+        {/* Phones image */}
+        <div className="mt-6 flex justify-start">
+          <Image
+            src="/step.svg"
+            alt="Find, book and manage pet services with PawCare"
+            width={900}
+            height={450}
+            className="w-full max-w-[620px] h-auto"
+            priority
+          />
+        </div>
+      </div>
+    </div>
+
+    {/* RIGHT: flip card */}
+    <div className="mt-12 lg:mt-0 lg:flex-none flex justify-center">
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <span className="text-xl font-semibold">
+              How it works
+            </span>
+          </div>
+          <div className="card-back">
+            <span className="text-xl font-semibold text-center">
+              PawCare for pet owners
+              <br />
+              Find, book & manage in one place
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-            <div className="relative mt-10 max-w-[750px]">
-              {/* Phones image */}
-              <Image
-                src="/step.svg"
-                alt="Find, book and manage with PawCare"
-                width={1107}
-                height={554}
-                className="h-auto w-full"
-                priority
-              />
-
-              {/* Step labels aligned over each phone */}
-              <div className="pointer-events-none absolute inset-0 flex items-start">
-                <div className="flex w-full justify-between px-6 pt-4 sm:px-10 sm:pt-6">
-                  <p className="text-base font-semibold text-black sm:text-2xl">
-                    1. Find
-                  </p>
-                  <p className="text-base font-semibold text-black sm:text-2xl">
-                    2. Book
-                  </p>
-                  <p className="text-base font-semibold text-black sm:text-2xl">
-                    3. Manage
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT: flip card */}
-          <div className="mt-10 flex justify-center lg:mt-0 lg:flex-none">
-            <div className="card">
-              <div className="card-inner">
-                <div className="card-front">
-                  <span>How It Works</span>
-                </div>
-                <div className="card-back">
-                  <span>PawCare for businesses</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  ); // ⬅︎ only here do you close the return
-}
       {/* FOR BUSINESSES */}
       <section id="business" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
