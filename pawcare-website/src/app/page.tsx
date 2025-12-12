@@ -138,8 +138,8 @@ style={{
     <Image
       src="/step.svg"
       alt="How PawCare works: Find, Book, Manage"
-      width={450}             // original logical width
-      height={260}
+      width={800}             // original logical width
+      height={400}
       className="w-[450px] h-auto"
       priority
     />
