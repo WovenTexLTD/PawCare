@@ -53,25 +53,37 @@ body {
 
 /* You can swap these colors to PawCare orange/black later if you like */
 .card-front {
-  background-color: #6a2c70;
-  color: #fff;
+  background-color: #ffffff;               /* white card */
+  color: #000000;                          /* black text */
   display: flex;
   align-items: center;
-  border: 10px solid #6a2c70;
-  border-radius: 10px;
   justify-content: center;
-  font-size: 24px;
+  border-radius: 16px;
+  border: 10px solid #ffffff;
+
+  /* "as big as a title" */
+  font-size: 2.5rem;                       /* ~40px, tweak as needed */
+  font-weight: 700;                        /* bold */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
   transform: rotateY(0deg);
 }
-
 .card-back {
-  background-color: #f08a5d;
-  color: #fff;
+  background-color: #ff751f;               /* PawCare orange */
+  color: #ffffff;                          /* white text */
   display: flex;
   align-items: center;
-  border: 10px solid #f08a5d;
-  border-radius: 10px;
   justify-content: center;
-  font-size: 24px;
+  border-radius: 16px;
+  border: 10px solid #ff751f;
+
+  /* body-sized text */
+  font-size: 1rem;                         /* ~16px body size */
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  padding: 1.5rem;                         /* some breathing room */
+  text-align: center;
   transform: rotateY(180deg);
 }
