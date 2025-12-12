@@ -69,19 +69,17 @@ export default function MyPetSection() {
         </div>
 
         {/* RIGHT – phone mock / illustration */}
-        <div className="flex items-center justify-center lg:justify-end">
-          <div className="relative h-[420px] w-auto">
-            <Image
-              src="/phone.svg" // update if your file name/path is different
-              alt="PawCare My Pets screen"
-              width={360}
-              height={720}
-              className="h-full w-auto drop-shadow-xl"
-              priority
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+        {/* RIGHT – phone mock / illustration */}
+<div className="flex items-center justify-center lg:justify-end">
+  <div className="relative h-[420px] w-auto">
+    <Image
+      src="/phone.svg"
+      alt="PawCare My Pets screen"
+      width={360}
+      height={720}
+      className="h-full w-auto drop-shadow-xl"
+      priority
+    />
+  </div>
+</div>
+
