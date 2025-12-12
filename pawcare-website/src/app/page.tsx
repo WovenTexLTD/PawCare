@@ -26,17 +26,15 @@ const steps = [
 export default function HomePage() {
   return (
     <main>
-       {/* HERO */}
+             {/* HERO */}
       <section className="relative overflow-hidden border-b border-black/10 bg-[#ff751f]">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:py-20">
-          {/* LEFT SIDE: PawCare word + text + buttons */}
+          {/* LEFT SIDE: text */}
           <div className="relative flex-1">
-            {/* Big PawCare wordmark-style text */}
             <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
               PawCare
             </div>
 
-            {/* Hero headline & copy under the PawCare text */}
             <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Pet care, made simple.
             </h1>
@@ -60,24 +58,25 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* RIGHT SIDE: white circle + phone SVG */}
-              {/* RIGHT SIDE: white circle + phone SVG */}
-      <div className="relative flex flex-1 items-center justify-center">
-        <div className="relative h-[520px] w-[520px] sm:h-[560px] sm:w-[560px]">
-          <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
-          <div className="relative flex h-full w-full items-center justify-center">
-            <Image
-              src="/phone.svg"
-              alt="PawCare app preview"
-              width={440}   // 220 × 2
-              height={880}  // 440 × 2
-              className="drop-shadow-xl"
-              priority
-            />
+          {/* RIGHT SIDE: white circle + phone */}
+          <div className="relative flex flex-1 items-center justify-center">
+            <div className="relative h-[520px] w-[520px] sm:h-[560px] sm:w-[560px]">
+              <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
+              <div className="relative flex h-full w-full items-center justify-center">
+                <Image
+                  src="/phone.svg"
+                  alt="PawCare app preview"
+                  width={440}
+                  height={880}
+                  className="drop-shadow-xl"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </section>
+
       {/* FEATURES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
