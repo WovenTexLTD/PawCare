@@ -24,8 +24,8 @@ export default function BusinessSection() {
         <div className="flex items-center">
           <div className="mx-auto w-full max-w-3xl px-6 py-12 lg:px-12">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-semibold sm:text-4xl">
-                For clinics &amp; pet businesses
+              <h2 className="text-3xl font-bold sm:text-4xl">
+                For All Pet Businesses
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-white/70">
                 PawCare helps businesses get discovered and reduce friction in
@@ -33,17 +33,17 @@ export default function BusinessSection() {
                 visibility), we’d love to talk.
               </p>
 
-              <div className="mt-8 space-y-4">
-                <div className="rounded-full bg-white text-black px-5 py-3 text-sm">
-                  Clear profile: services, hours, contact info
-                </div>
-                <div className="rounded-full bg-white text-black px-5 py-3 text-sm">
-                  Booking requests routed cleanly
-                </div>
-                <div className="rounded-full bg-white text-black px-5 py-3 text-sm">
-                  Less admin work, fewer missed calls
-                </div>
-              </div>
+             <div className="mt-8 space-y-4">
+  <div className="inline-flex w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+    Clear profile: services, hours, contact info
+  </div>
+  <div className="inline-flex w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+    Booking requests routed cleanly
+  </div>
+  <div className="inline-flex w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+    Less admin work, fewer missed calls
+  </div>
+</div>
 
               <button className="mt-8 inline-flex items-center rounded-full bg-[#ff751f] px-6 py-2 text-sm font-semibold text-white">
                 Contact us
