@@ -180,7 +180,7 @@ style={{
     <BusinessSection />
 
       {/* DOWNLOAD / CTA */}
-    <GetAppSectio />
+    <GetAppSection />
       
     </main>
   );
