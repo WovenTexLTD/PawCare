@@ -1,7 +1,10 @@
 // src/components/GetAppSection.tsx
 export default function GetAppSection() {
   return (
-    <section id="get-pawcare" className="bg-[#050505] py-16 sm:py-20">
+<section
+  id="get-pawcare"
+  className="bg-[#ff751f] py-16 sm:py-20"
+>
       <div className="mx-auto max-w-5xl space-y-10 px-6">
         {/* CARD 1 – Get PawCare / early access */}
         <div className="rounded-3xl bg-white/95 shadow-xl shadow-black/10">
