@@ -1,10 +1,11 @@
+// src/app/page.tsx
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import FAQ from "@/components/FAQ";
-import { Pacifico } from "next/font/google";
 import MyPetSection from "@/components/MyPetSection";
 import BusinessSection from "@/components/BusinessSection";
 import GetAppSection from "@/components/GetAppSection";
+import { Pacifico } from "next/font/google";
+
 const pawcareFont = Pacifico({
   subsets: ["latin"],
   weight: "400",
@@ -25,29 +26,23 @@ const features = [
   },
 ];
 
-const steps = [
-  { k: "1", title: "Search", desc: "Find providers near you in seconds." },
-  { k: "2", title: "Compare", desc: "Check services, hours, and key details." },
-  { k: "3", title: "Book", desc: "Request a slot and keep your plans in one place." },
-];
-
 export default function HomePage() {
   return (
     <main>
-             {/* HERO */}
+      {/* HERO */}
       <section className="relative overflow-hidden border-b border-black/10 bg-[#ff751f]">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:py-20">
           {/* LEFT SIDE: text */}
           <div className="relative flex-1">
             <div
-  className={`${pawcareFont.className} text-5xl sm:text-6xl`}
-style={{
-  color: "#ffffff",
-  textShadow: "0.08em 0.06em 0 #f4a667",
-}}
->
-  PawCare
-</div>
+              className={`${pawcareFont.className} text-5xl sm:text-6xl`}
+              style={{
+                color: "#ffffff",
+                textShadow: "0.08em 0.06em 0 #f4a667",
+              }}
+            >
+              PawCare
+            </div>
 
             <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Pet care, made simple.
@@ -59,10 +54,13 @@ style={{
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              {/* scrolls to GetAppSection (make sure GetAppSection has id="download") */}
               <Button href="#download" variant="secondary">
                 Get the app
               </Button>
-              <Button href="#business" variant="secondary">
+
+              {/* sends businesses to contact page */}
+              <Button href="/contact" variant="secondary">
                 For businesses
               </Button>
             </div>
@@ -74,7 +72,7 @@ style={{
 
           {/* RIGHT SIDE: white circle + phone */}
           <div className="relative flex flex-1 items-center justify-center">
-      <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
+            <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
               <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)]" />
               <div className="relative flex h-full w-full items-center justify-center">
                 <Image
@@ -91,18 +89,17 @@ style={{
         </div>
       </section>
 
-            {/* FEATURES */}
+      {/* FEATURES */}
       <section className="relative overflow-hidden bg-white">
-      <div className="max-w-5xl px-6 py-16 lg:py-24 lg:pl-24">
+        <div className="max-w-5xl px-6 py-16 lg:py-24 lg:pl-24">
           <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl">
             What PawCare offers
           </h2>
           <p className="mt-2 max-w-xl text-sm text-black/70 sm:text-base">
-            A clean experience for discovery and booking — designed for speed, clarity,
-            and trust.
+            A clean experience for discovery and booking — designed for speed,
+            clarity, and trust.
           </p>
 
-          {/* Cards, pushed left with a max width */}
           <div className="mt-10 max-w-4xl space-y-6 md:grid md:max-w-none md:grid-cols-3 md:gap-6 md:space-y-0">
             {features.map((feature) => (
               <div
@@ -119,135 +116,62 @@ style={{
         </div>
 
         {/* Dog illustration bottom-right */}
-   <div className="pointer-events-none absolute -bottom-4 right-0 w-[260px] sm:w-[360px] md:w-[480px]">
-  <Image
-    src="/dog.svg"
-    alt="Happy dog"
-    width={480}
-    height={480}
-    className="h-auto w-full drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
+        <div className="pointer-events-none absolute -bottom-4 right-0 w-[260px] sm:w-[360px] md:w-[480px]">
+          <Image
+            src="/dog.svg"
+            alt="Happy dog"
+            width={480}
+            height={480}
+            className="h-auto w-full drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
           />
         </div>
       </section>
 
-{/* HOW IT WORKS */}
-<section id="how-it-works" className="bg-[#f3f4f6] py-20">
-  <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
-
-{/* LEFT: step.svg – bigger via scale, without widening layout */}
-<div className="flex-shrink-0 -translate-x-4">
-  <div className="origin-left scale-[1.4]">
-    <Image
-      src="/step.svg"
-      alt="How PawCare works: Find, Book, Manage"
-      width={800}             // original logical width
-      height={400}
-      className="w-[700px] h-auto"
-      priority
-    />
-  </div>
-</div>
-
-
-    {/* RIGHT: flip card – moved slightly right & 40% bigger */}
-    <div className="flex-shrink-0 translate-x-4">
-      <div className="card scale-[1.4] origin-center">
-        <div className="card-inner">
-          {/* FRONT: white background, big black title */}
-          <div className="card-front">
-            <h2>How it works</h2>
+      {/* HOW IT WORKS */}
+      <section id="how-it-works" className="bg-[#f3f4f6] py-20">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
+          {/* LEFT: step.svg */}
+          <div className="flex-shrink-0 -translate-x-4">
+            <div className="origin-left scale-[1.4]">
+              <Image
+                src="/step.svg"
+                alt="How PawCare works: Find, Book, Manage"
+                width={800}
+                height={400}
+                className="h-auto w-[700px]"
+                priority
+              />
+            </div>
           </div>
 
-          {/* BACK: orange background, white body text */}
-          <div className="card-back">
-            <p>
-              PawCare helps pet owners discover trusted vets, groomers and
-              daycare, then book and manage everything in one place with
-              fewer headaches.
-            </p>
+          {/* RIGHT: flip card */}
+          <div className="flex-shrink-0 translate-x-4">
+            <div className="card scale-[1.4] origin-center">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h2>How it works</h2>
+                </div>
+                <div className="card-back">
+                  <p>
+                    PawCare helps pet owners discover trusted vets, groomers and
+                    daycare, then book and manage everything in one place with
+                    fewer headaches.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* MY PET SECTION */}
       <MyPetSection />
-      
+
       {/* FOR BUSINESSES */}
-    <BusinessSection />
+      <BusinessSection />
 
-      {/* DOWNLOAD / CTA */}
-    <GetAppSection />
-      
-    </main>
-  );
-}
-// src/app/contact/page.tsx
-export default function ContactPage() {
-  return (
-    <main className="bg-[#f5f5f5]">
-      <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-        <h1 className="text-3xl font-semibold tracking-tight text-black">
-          Contact PawCare
-        </h1>
-        <p className="mt-3 text-sm text-black/70">
-          Share a few details about your clinic or pet business and we&apos;ll
-          get back to you.
-        </p>
-
-        <form className="mt-8 space-y-5">
-          <div>
-            <label className="block text-sm font-medium text-black">
-              Business name
-            </label>
-            <input
-              type="text"
-              className="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-[#ff751f]"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-black">
-              Contact email
-            </label>
-            <input
-              type="email"
-              className="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-[#ff751f]"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-black">
-              Website (optional)
-            </label>
-            <input
-              type="text"
-              className="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-[#ff751f]"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-black">
-              Message
-            </label>
-            <textarea
-              rows={5}
-              className="mt-1 w-full rounded-lg border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-[#ff751f]"
-              placeholder="Tell us about your clinic, what you’re looking for, and how we can help."
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="mt-2 inline-flex items-center rounded-full bg-[#ff751f] px-6 py-2 text-sm font-semibold text-white hover:bg-[#e66917] transition"
-          >
-            Send message
-          </button>
-        </form>
-      </section>
+      {/* DOWNLOAD / CTA (make sure this component has id="download") */}
+      <GetAppSection />
     </main>
   );
 }
