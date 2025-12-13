@@ -33,17 +33,20 @@ export default function BusinessSection() {
                 visibility), we’d love to talk.
               </p>
 
-             <div className="mt-8 space-y-4">
-  <div className="inline-flex w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+<div className="mt-8 space-y-4">
+  <div className="w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
     Clear profile: services, hours, contact info
   </div>
-  <div className="inline-flex w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+
+  <div className="w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
     Booking requests routed cleanly
   </div>
-  <div className="inline-flex w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+
+  <div className="w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
     Less admin work, fewer missed calls
   </div>
 </div>
+
 
               <button className="mt-8 inline-flex items-center rounded-full bg-[#ff751f] px-6 py-2 text-sm font-semibold text-white">
                 Contact us
