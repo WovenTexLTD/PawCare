@@ -38,15 +38,15 @@ export default function BusinessSection() {
     Clear profile: services, hours, contact info
   </div>
 
-  <div className="w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
-    Booking requests routed cleanly
-  </div>
-
+ 
   <div className="w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
     Less admin work, fewer missed calls
   </div>
+  
+  <div className="w-fit rounded-full bg-white text-black px-5 py-3 text-sm shadow-sm">
+    Booking requests routed cleanly
+  </div>
 </div>
-
 
               <button className="mt-8 inline-flex items-center rounded-full bg-[#ff751f] px-6 py-2 text-sm font-semibold text-white">
                 Contact us
