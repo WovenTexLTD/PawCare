@@ -6,8 +6,6 @@ import BusinessSection from "@/components/BusinessSection";
 import GetAppSection from "@/components/GetAppSection";
 import { Pacifico } from "next/font/google";
 
-import { Pacifico } from "next/font/google";
-
 const pawcareFont = Pacifico({
   subsets: ["latin"],
   weight: "400",
