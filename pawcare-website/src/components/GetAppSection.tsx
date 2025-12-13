@@ -2,7 +2,7 @@
 export default function GetAppSection() {
   return (
 <section
-  id="get-pawcare"
+  id="download"
   className="bg-[#ff751f] py-16 sm:py-20"
 >
       <div className="mx-auto max-w-5xl space-y-10 px-6">
