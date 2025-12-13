@@ -1,6 +1,6 @@
+// src/app/page.tsx
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import FAQ from "@/components/FAQ";
 import MyPetSection from "@/components/MyPetSection";
 import BusinessSection from "@/components/BusinessSection";
 import GetAppSection from "@/components/GetAppSection";
@@ -12,7 +12,7 @@ const pawcareFont = Pacifico({
   weight: "400",
 });
 
-// ✅ Put this back:
+// Feature cards under “What PawCare offers”
 const features = [
   {
     title: "Find trusted pet services",
@@ -28,13 +28,6 @@ const features = [
   },
 ];
 
-// (Only keep this if you’re still using `steps` lower in the file)
-const steps = [
-  { k: "1", title: "Search", desc: "Find providers near you in seconds." },
-  { k: "2", title: "Compare", desc: "Check services, hours, and key details." },
-  { k: "3", title: "Book", desc: "Request a slot and keep your plans in one place." },
-];
-
 export default function HomePage() {
   return (
     <main>
@@ -43,7 +36,7 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:py-20">
           {/* LEFT SIDE: text */}
           <div className="relative flex-1">
-            {/* ❗ Only the logo uses the script font */}
+            {/* Script logo only */}
             <div
               className={`${pawcareFont.className} text-5xl sm:text-6xl`}
               style={{
@@ -54,7 +47,7 @@ export default function HomePage() {
               PawCare
             </div>
 
-            {/* Everything below uses your normal site font (from globals.css) */}
+            {/* Everything below uses the normal site font */}
             <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Pet care, made simple.
             </h1>
@@ -77,6 +70,7 @@ export default function HomePage() {
               Informational website — the app handles bookings.
             </p>
           </div>
+
           {/* RIGHT SIDE: white circle + phone */}
           <div className="relative flex flex-1 items-center justify-center">
             <div className="relative h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]">
@@ -177,7 +171,7 @@ export default function HomePage() {
       {/* FOR BUSINESSES */}
       <BusinessSection />
 
-      {/* DOWNLOAD / CTA (make sure this component has id="download") */}
+      {/* DOWNLOAD / CTA (component should include id="download") */}
       <GetAppSection />
     </main>
   );
