@@ -3,13 +3,16 @@ import Image from "next/image";
 
 export default function BusinessSection() {
   return (
-    <section className="bg-black text-white">
+    // 1) Dark grey instead of pure black
+    <section className="bg-[#75706d] text-white">
       {/* 2-column layout: image on the left, content on the right */}
-      <div className="grid min-h-[550px] lg:min-h-[580px] lg:grid-cols-2">
+      {/* 2) Make the whole block taller so more of person.svg is visible */}
+      <div className="grid min-h-[650px] lg:min-h-[720px] lg:grid-cols-2">
         {/* LEFT: full-height person.svg */}
-        <div className="relative h-70 lg:h-auto">
+        {/* 3) Remove h-70 and give the column a min-height as well */}
+        <div className="relative min-h-[650px] lg:min-h-[720px]">
           <Image
-            src="/person.svg" // make sure this path matches your file
+            src="/person.svg"
             alt="Pet clinic owner illustration"
             fill
             className="object-cover"
@@ -31,18 +34,18 @@ export default function BusinessSection() {
               </p>
 
               <div className="mt-8 space-y-4">
-                <div className="rounded-full bg-white text-black px-3 py-3 text-sm">
+                <div className="rounded-full bg-white text-black px-5 py-3 text-sm">
                   Clear profile: services, hours, contact info
                 </div>
-                <div className="rounded-full bg-white text-black px-3 py-3 text-sm">
+                <div className="rounded-full bg-white text-black px-5 py-3 text-sm">
                   Booking requests routed cleanly
                 </div>
-                <div className="rounded-full bg-white text-black px-3 py-3 text-sm">
+                <div className="rounded-full bg-white text-black px-5 py-3 text-sm">
                   Less admin work, fewer missed calls
                 </div>
               </div>
 
-              <button className="mt-8 inline-flex items-center rounded-full bg-[#75706d] px-6 py-2 text-sm font-semibold text-white">
+              <button className="mt-8 inline-flex items-center rounded-full bg-[#ff751f] px-6 py-2 text-sm font-semibold text-white">
                 Contact us
               </button>
             </div>
