@@ -4,6 +4,7 @@ import FAQ from "@/components/FAQ";
 import { Pacifico } from "next/font/google";
 import MyPetSection from "@/components/MyPetSection";
 import BusinessSection from "@/components/BusinessSection";
+import GetAppSection from "@/components/GetAppSection";
 const pawcareFont = Pacifico({
   subsets: ["latin"],
   weight: "400",
@@ -179,51 +180,8 @@ style={{
     <BusinessSection />
 
       {/* DOWNLOAD / CTA */}
-      <section id="download" className="border-t border-zinc-100">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              Get PawCare
-            </h2>
-            <p className="mt-3 max-w-2xl text-zinc-600">
-              Add your App Store / Google Play links here when ready. For now, you can
-              collect early access emails.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="#" variant="primary">
-                App Store (coming soon)
-              </Button>
-              <Button href="#" variant="secondary">
-                Google Play (coming soon)
-              </Button>
-            </div>
-
-            <div className="mt-8 rounded-2xl border border-zinc-200 p-5">
-              <div className="text-sm font-semibold">Early access</div>
-              <p className="mt-1 text-sm text-zinc-600">
-                Replace this with a real form later.
-              </p>
-              <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                <input
-                  className="w-full rounded-2xl border border-zinc-200 px-4 py-3 text-sm outline-none focus:border-zinc-400"
-                  placeholder="Email address"
-                />
-                <button className="rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white">
-                  Notify me
-                </button>
-              </div>
-              <p className="mt-2 text-xs text-zinc-500">
-                (This is a placeholder — we’ll wire it up later.)
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <FAQ />
-          </div>
-        </div>
-      </section>
+    <GetAppSectio />
+      
     </main>
   );
 }
