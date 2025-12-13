@@ -176,64 +176,7 @@ style={{
       <MyPetSection />
       
       {/* FOR BUSINESSES */}
-      <section id="business" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              For clinics & pet businesses
-            </h2>
-            <p className="mt-3 text-zinc-600">
-              PawCare helps businesses get discovered and reduce friction in scheduling.
-              If you want to be listed (or want priority visibility), we’d love to talk.
-            </p>
-
-            <ul className="mt-6 grid gap-3 text-zinc-700">
-              <li className="rounded-2xl border border-zinc-200 bg-white p-4">
-                Clear profile: services, hours, contact info
-              </li>
-              <li className="rounded-2xl border border-zinc-200 bg-white p-4">
-                Booking requests routed cleanly
-              </li>
-              <li className="rounded-2xl border border-zinc-200 bg-white p-4">
-                Less admin work, fewer missed calls
-              </li>
-            </ul>
-
-            <div className="mt-8">
-              <Button href="mailto:hello@pawcare.app" variant="primary">
-                Contact us
-              </Button>
-            </div>
-          </div>
-
-          <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="text-sm font-semibold text-zinc-900">
-              Example listing preview
-            </div>
-            <div className="mt-4 rounded-2xl border border-zinc-200 p-5">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <div className="font-semibold">Happy Tails Veterinary</div>
-                  <div className="mt-1 text-sm text-zinc-600">
-                    Wellness • Vaccines • Urgent Care
-                  </div>
-                </div>
-                <div className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-700">
-                  Open today
-                </div>
-              </div>
-              <div className="mt-4 grid gap-2 text-sm text-zinc-700">
-                <div>📍 Austin, TX</div>
-                <div>🕒 9:00–18:00</div>
-                <div>📞 (000) 000-0000</div>
-              </div>
-              <div className="mt-5 rounded-2xl bg-zinc-900 px-4 py-3 text-center text-sm font-medium text-white">
-                Request a booking
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <BusinessSection />
 
       {/* DOWNLOAD / CTA */}
       <section id="download" className="border-t border-zinc-100">
