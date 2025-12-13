@@ -1,15 +1,39 @@
-// src/app/page.tsx
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import FAQ from "@/components/FAQ";
 import MyPetSection from "@/components/MyPetSection";
 import BusinessSection from "@/components/BusinessSection";
 import GetAppSection from "@/components/GetAppSection";
 import { Pacifico } from "next/font/google";
 
+// Only used for the PawCare wordmark
 const pawcareFont = Pacifico({
   subsets: ["latin"],
   weight: "400",
 });
+
+// ✅ Put this back:
+const features = [
+  {
+    title: "Find trusted pet services",
+    desc: "Browse vets, groomers, daycare, training, and pet shops with clear info and fast navigation.",
+  },
+  {
+    title: "Book with confidence",
+    desc: "Request appointments and keep everything organized — without endless back-and-forth.",
+  },
+  {
+    title: "Built for busy pet parents",
+    desc: "Simple, mobile-first experience that helps you get care faster and reduce stress.",
+  },
+];
+
+// (Only keep this if you’re still using `steps` lower in the file)
+const steps = [
+  { k: "1", title: "Search", desc: "Find providers near you in seconds." },
+  { k: "2", title: "Compare", desc: "Check services, hours, and key details." },
+  { k: "3", title: "Book", desc: "Request a slot and keep your plans in one place." },
+];
 
 export default function HomePage() {
   return (
