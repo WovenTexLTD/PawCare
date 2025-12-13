@@ -1,14 +1,8 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Pacifico } from "next/font/google";
-
-const pawcareFont = Pacifico({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export const metadata: Metadata = {
   title: "PawCare — Pet care, made simple",
@@ -23,10 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${pawcareFont.className} min-h-dvh bg-white text-black antialiased`}
-      >
-        <Header />
+      <body className="min-h-dvh bg-white text-black antialiased">
+        <Navbar />
         {children}
         <Footer />
       </body>
