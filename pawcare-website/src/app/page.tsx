@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 import FAQ from "@/components/FAQ";
 import { Pacifico } from "next/font/google";
 import MyPetSection from "@/components/MyPetSection";
-
+import BusinessSection from "@/components/BusinessSection";
 const pawcareFont = Pacifico({
   subsets: ["latin"],
   weight: "400",
